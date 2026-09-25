@@ -1,37 +1,121 @@
 h1 {
-    color: #1b2b43;
+    color: #000000;
     font-family: Arial, sans-serif;
     text-align: right;
-    size: 80v;
+    font-size: clamp(3rem, 10vw, 6rem);
+    padding: 0px;
+    margin: 0px;
+    color: white;
 }
 
 h3 {
-    color: #1b2b43;
+    color: #009dff;
     font-family: Arial, sans-serif;
+    font-size: 2rem;
     text-align: right;
+    padding: 0px;
+    margin: 0px;
+}
+
+h4 {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: #000000;
+    color: white;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container img {
+    size: 1rem;
+    margin-right: 1rem;
+
 }
 
 body {
     margin: 0px;
 }
 
-
-.page {
-    max-width: 1200px;
-    margin: 0 auto;
+.Background-Intro {
+    position: relative;
+    overflow: hidden;
 }
 
-.section {
-    padding: 100px;
+.Background-Intro::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background-image: url(Image/Ref_1080p.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px) brightness(0.6);
+    z-index: -1;
+}
+
+.page {
+    max-width: 1220px;
+    margin: auto;
+    padding: 0 4vw;
+}
+
+.MyLogo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.Intro-photo,
+.Intro-text {
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    align-items: center;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.Intro-photo {
+    width: clamp(13rem, 100%, 30rem);
+    height: 20rem;
+    object-fit: cover;
+    border-radius: 25px 10px 25px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 
 .Introduction {
-    padding: 0px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 3fr 2fr;
+    gap: 1rem;
 }
 
 .Introduction p {
     text-align: right;
+}
+
+.nom {
+    text-transform: scaleY(0.5);
 }
