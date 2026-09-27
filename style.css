@@ -23,6 +23,7 @@ h4 {
 
 p {
     font-family: Arial, sans-serif;
+    font-size: 1.25rem;
 }
 
 header {
@@ -32,6 +33,24 @@ header {
     position: sticky;
     background-color: #000000;
     color: white;
+}
+
+header a {
+    padding: 0.25rem;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+header p {
+    background-color: #000000;
+    padding: 0.2rem;
+    margin: 0;
+    padding-right: 0.4rem;
+    margin-right: 0.1rem;
+    color: #000000;
+    Background-color: #009dff;
+    border-radius: 0px 10px;
 }
 
 .flex-container {
@@ -96,7 +115,7 @@ body {
 }
 
 .Intro-photo {
-    width: clamp(13rem, 100%, 30rem);
+    width: clamp(13rem, 100%, 40rem);
     height: 20rem;
     object-fit: cover;
     border-radius: 25px 10px 25px 10px;
@@ -105,8 +124,8 @@ body {
 
 
 .Introduction {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     display: grid;
     grid-template-columns: 3fr 2fr;
     gap: 1rem;
@@ -118,4 +137,42 @@ body {
 
 .nom {
     text-transform: scaleY(0.5);
+}
+
+#Section-nav-projets {
+    border: 3px solid #009dff;
+    border-radius: 5px 15px;
+    padding: 0 0.3rem 0 0rem;
+    margin: 0 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.border {
+    padding-right: 1rem;
+}
+
+@media (max-width: 700px) {
+    .Introduction {
+        grid-template-columns: 3fr;
+    }
+
+    .Intro-text,
+    .Intro-photo {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1vh;
+        margin-top: 1vh;
+    }
+
+    .Introduction p {
+        text-align: center;
+    }
+
+    .Introduction h1 {
+        text-align: center;
+    }
+
+    .Introduction h3 {
+        text-align: center;
+    }
 }
