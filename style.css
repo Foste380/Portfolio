@@ -1,5 +1,14 @@
+:root {
+    --sombre: #151515;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
 h1 {
-    color: #000000;
+    color: black;
     font-family: Arial, sans-serif;
     text-align: right;
     font-size: clamp(3rem, 10vw, 6rem);
@@ -8,17 +17,30 @@ h1 {
     color: white;
 }
 
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: clamp(2rem, 6vw, 4rem);
+    padding: 1rem;
+    margin: 0;
+}
+
 h3 {
     color: #009dff;
     font-family: Arial, sans-serif;
     font-size: 2rem;
-    text-align: right;
     padding: 0px;
     margin: 0px;
 }
 
 h4 {
     font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+h5 {
+    font-family: Arial, sans-serif;
+    margin: 1rem 1rem 0.5rem 1rem;
+    font-size: 1rem;
 }
 
 p {
@@ -31,8 +53,12 @@ header {
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    background-color: #000000;
+    background-color: var(--sombre);
     color: white;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
 }
 
 header a {
@@ -43,7 +69,7 @@ header a {
 }
 
 header p {
-    background-color: #000000;
+    background-color: var(--sombre);
     padding: 0.2rem;
     margin: 0;
     padding-right: 0.4rem;
@@ -67,6 +93,7 @@ header p {
 
 body {
     margin: 0px;
+    overflow-x: hidden;
 }
 
 .Background-Intro {
@@ -93,6 +120,8 @@ body {
     max-width: 1220px;
     margin: auto;
     padding: 0 4vw;
+    margin-bottom: 0;
+    z-index: -20;
 }
 
 .MyLogo {
@@ -112,6 +141,7 @@ body {
     align-items: center;
     text-shadow: 0 4px 12px rgba(0, 0, 0, 0.8);
     color: white;
+    text-align: right;
 }
 
 .Intro-photo {
@@ -149,6 +179,68 @@ body {
 
 .border {
     padding-right: 1rem;
+}
+
+.Background-Main {
+    background-color: var(--sombre);
+    color: #ffffff;
+}
+
+.Proj-Section {
+    background-color: #009dff;
+    transform: rotate(1deg);
+    width: 105vw;
+    margin-left: -2.5vw;
+    padding: 1rem 0;
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 1);
+}
+
+.Proj-Section h3 {
+    margin-left: 2rem;
+}
+
+.Highlight {
+    color: #000000;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.Project-Columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: rem;
+    margin-top: 1rem;
+}
+
+.Project-Box {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    width: clamp(5rem, 27vw, 23rem);
+    flex-direction: column;
+    color: white;
+    border-radius: 25px 10px 25px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.Project-Box p {
+    font-size: 0.8rem;
+    margin: 0.5rem 1rem;
+    color: gray;
+}
+
+.Project-Box h4 {
+    font-size: 1.7rem;
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.Project-1-text {
+    background-color: var(--sombre);
+    border-radius: 0 0 25px 10px;
+}
+
+.Project-Illstration {
+    object-fit: cover;
+    border-radius: 25px 10px 0 0;
 }
 
 @media (max-width: 700px) {
