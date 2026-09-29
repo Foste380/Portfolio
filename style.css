@@ -1,5 +1,7 @@
 :root {
     --sombre: #151515;
+    --Maint: RGB(172, 0, 255);
+    --MaintA: RGBA(172, 0, 255, 0.4);
 }
 
 html {
@@ -81,6 +83,7 @@ header p {
 
 .flex-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -94,6 +97,33 @@ header p {
 body {
     margin: 0px;
     overflow-x: hidden;
+}
+
+.State-Box {
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    z-index: 21;
+    padding: 1rem 1rem;
+    background-color: var(--MaintA);
+    border: 0.2rem solid var(--Maint);
+    border-radius: 2.2rem;
+}
+
+.State-Logo {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+}
+
+.State-Text {
+    margin: 0;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .Background-Intro {
@@ -215,7 +245,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: top;
-    width: clamp(5rem, 27vw, 23rem);
+    width: clamp(5rem, 28.5vw, 23rem);
     flex-direction: column;
     color: white;
     border-radius: 25px 10px 25px 10px;
