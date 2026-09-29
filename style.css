@@ -106,7 +106,7 @@ body {
     transform: translateX(-50%);
     display: flex;
     align-items: center;
-    z-index: 21;
+    z-index: 19;
     padding: 1rem 1rem;
     background-color: var(--MaintA);
     border: 0.2rem solid var(--Maint);
