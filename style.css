@@ -2,6 +2,7 @@
     --sombre: #151515;
     --Maint: RGB(172, 0, 255);
     --MaintA: RGBA(172, 0, 255, 0.4);
+    --Perso-Blue: #009dff;
 }
 
 html {
@@ -216,13 +217,21 @@ body {
     color: #ffffff;
 }
 
-.Proj-Section {
+.Proj-Section:first-of-type {
     background-color: #009dff;
     transform: rotate(1deg);
     width: 105vw;
     margin-left: -2.5vw;
-    padding: 1rem 0;
+}
+
+.Proj-Section {
     box-shadow: 0 0 3rem rgba(0, 0, 0, 1);
+    padding: 2.5rem 0rem;
+    margin-bottom: 2rem
+}
+
+.Proj-Section h3 {
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .Proj-Section h3 {
@@ -231,7 +240,6 @@ body {
 
 .Highlight {
     color: #000000;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .Project-Columns {
@@ -284,6 +292,63 @@ body {
     object-fit: cover;
 }
 
+.Separation {
+    margin: 0 -2rem;
+    text-align: center;
+    background-color: blue;
+    transform: rotate(-1deg);
+    box-shadow: 0 0px 12px rgba(0, 0, 0, 0.5);
+}
+
+.Acti-OVERALL {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.Acti-HL {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(Image/Ref_1080p.png);
+    background-size: cover;
+    border-radius: 21px 10px 25px 10px;
+    box-shadow: 0px 0px 3em rgba(0, 0, 0, 1);
+}
+
+.Acti-Text {
+    padding: 1rem 0;
+    box-shadow: 0px 0px 3em rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.HL-star {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 0.7rem;
+    top: 0.7rem;
+}
+
+.Acti-Sec {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(Image/Ref_1080p.png);
+    background-size: cover;
+    border-radius: 21px 10px 25px 10px;
+    margin-bottom: 2rem;
+}
+
+.Sec-text {
+    padding: 1rem 0;
+    box-shadow: 0px 0px 3em rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 10rem;
+}
+
 @media (max-width: 800px) {
     .Introduction {
         grid-template-columns: 3fr;
@@ -316,6 +381,10 @@ body {
     .Project-Box {
         width: clamp(5rem, 43vw, 23rem);
         margin-bottom: 1rem;
+    }
+
+    .State-Box {
+        top: 14%;
     }
 }
 
