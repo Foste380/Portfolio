@@ -3,6 +3,7 @@
     --Maint: RGB(172, 0, 255);
     --MaintA: RGBA(172, 0, 255, 0.4);
     --Perso-Blue: #009dff;
+    --Light: #292929;
 }
 
 html {
@@ -215,6 +216,7 @@ body {
 .Background-Main {
     background-color: var(--sombre);
     color: #ffffff;
+    box-shadow: 0 1rem 1rem rgba(4, 4, 4, 0.5);
 }
 
 .Proj-Section:first-of-type {
@@ -319,7 +321,7 @@ body {
 }
 
 .Acti-Text {
-    padding: 1rem 0;
+    padding: 1rem 0 1rem 1rem;
     box-shadow: 0px 0px 3em rgba(0, 0, 0, 1);
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -349,7 +351,7 @@ body {
 
 
 .Sec-text {
-    padding: 1rem 0;
+    padding: 1rem 0 1rem 1rem;
     box-shadow: 0px 0px 3em rgba(0, 0, 0, 1);
     background-color: rgba(0, 0, 0, 0.5);
     margin-top: 10rem;
@@ -359,6 +361,43 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+}
+
+.BioContent {
+    display: grid;
+    grid-template-columns: 2fr auto 1fr;
+    gap: 1rem;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.SpecScet {
+    border-bottom: 0.2rem solid var(--Light);
+}
+
+.SpecScet:first-child {
+    border-top: 0.2rem solid var(--Light);
+}
+
+.selfie {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 21px 10px 25px 10px;
+}
+
+.Ground {
+    padding-top: 1rem;
+    position: relative;
+    display: flex;
+    background-color: var(--sombre);
+    color: rgba(93, 93, 93, 0.5);
+    z-index: -20;
+}
+
+.IAPrev {
+    font-size: 1rem;
+    padding-left: 1rem;
 }
 
 @media (max-width: 800px) {
