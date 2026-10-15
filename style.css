@@ -112,8 +112,8 @@ body {
     align-items: center;
     z-index: 19;
     padding: 0.5rem 1rem 0.5rem 0.5rem;
-    background-color: var(--DevA);
-    border: 0.2rem solid var(--Dev);
+    background-color: var(--MaitA);
+    border: 0.2rem solid var(--Maint);
     border-radius: 2.2rem;
 }
 
