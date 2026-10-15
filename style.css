@@ -2,6 +2,8 @@
     --sombre: #151515;
     --Maint: RGB(172, 0, 255);
     --MaintA: RGBA(172, 0, 255, 0.4);
+    --Dev: RGB(41, 171, 221);
+    --DevA: RGBA(41, 171, 221, 0.4);
     --Perso-Blue: #009dff;
     --Light: #292929;
 }
@@ -110,8 +112,8 @@ body {
     align-items: center;
     z-index: 19;
     padding: 0.5rem 1rem 0.5rem 0.5rem;
-    background-color: var(--MaintA);
-    border: 0.2rem solid var(--Maint);
+    background-color: var(--DevA);
+    border: 0.2rem solid var(--Dev);
     border-radius: 2.2rem;
 }
 
@@ -292,6 +294,7 @@ body {
     left: 1rem;
     border-radius: 1.5rem;
     object-fit: cover;
+    z-index: 5;
 }
 
 .Separation {
