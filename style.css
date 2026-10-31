@@ -142,7 +142,7 @@ body {
 
 .State-Text {
     margin: 0;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    text-shadow: 0 4px 12px rgba(65, 0, 61, 0.5);
     -webkit-text-stroke: 1px black;
     paint-order: stroke fill;
 }
